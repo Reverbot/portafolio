@@ -21,7 +21,7 @@ export default ({data}) => {
 
 export const query = graphql`
   {
-    allStrapiProjects(filter: {featured: {eq: true}}) {
+    allStrapiProjects(sort: {order: DESC, fields: published_at}, filter: {featured: {eq: true}}) {
       nodes {
         github
         id

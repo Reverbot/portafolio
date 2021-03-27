@@ -7,7 +7,7 @@ const contact = () => {
     <section className="contact-page">
       <article className="contact-form">
         <h3>Ponerse en Contacto</h3>
-        <form  method="POST" data-netlify="true">
+        <form  method="POST" data-netlify="true"  action="https://formspree.io/f/mleoyqqd">
           <div className="form-group">
             <input name="name" type="text" placeholder="name" className="form-control"/>
             <input name="emal" type="email" placeholder="email" className="form-control"/>

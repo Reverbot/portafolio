@@ -4,23 +4,23 @@ import { FaAngleDoubleRight } from "react-icons/fa"
 import { graphql, useStaticQuery } from "gatsby"
 import { Link } from "gatsby"
 
-const query = graphql`
-  {
-    allStrapiJobs(sort: {fields: strapiId, order: DESC}) {
-      totalCount
-      nodes {
-        Company
-        date
-        position
-        desc {
-          id
-          name
-        }
-        strapiId
-      }
-    }
-  }
-`
+// const query = graphql`
+//   {
+//     allStrapiJobs(sort: {fields: strapiId, order: DESC}) {
+//       totalCount
+//       nodes {
+//         Company
+//         date
+//         position
+//         desc {
+//           id
+//           name
+//         }
+//         strapiId
+//       }
+//     }
+//   }
+// `
 
 const Jobs = () => {
   const data = useStaticQuery(query)
@@ -31,7 +31,7 @@ const Jobs = () => {
 
   return (
     <section className="section jobs">
-    <Title title="expierence" />
+    {/* <Title title="expierence" />
     <div className="jobs-center">
       <div className="btn-container">
         {jobs.map((item, index) => {
@@ -54,7 +54,7 @@ const Jobs = () => {
     </div>
     <Link to="/about" className="btn center-btn">
       More Info
-    </Link>
+    </Link> */}
   </section>
   )
 }
